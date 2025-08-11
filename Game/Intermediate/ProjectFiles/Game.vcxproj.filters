@@ -60,10 +60,16 @@
     <ClCompile Include="..\..\Source\Game\Private\PlayerStats.cpp">
       <Filter>Source\Game\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Game\Private\PlayerUpgrades.cpp">
+      <Filter>Source\Game\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Game\Public">
       <UniqueIdentifier>{E3101328-C263-37C4-A31E-6FD8DCE6CE3F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Game\Public\PlayerStats.h">
+      <Filter>Source\Game\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Game\Public\PlayerUpgrades.h">
       <Filter>Source\Game\Public</Filter>
     </ClInclude>
   </ItemGroup>
