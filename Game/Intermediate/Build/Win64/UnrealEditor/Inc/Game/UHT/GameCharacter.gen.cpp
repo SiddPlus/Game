@@ -18,6 +18,7 @@ ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 GAME_API UClass* Z_Construct_UClass_AGameCharacter();
 GAME_API UClass* Z_Construct_UClass_AGameCharacter_NoRegister();
 GAME_API UClass* Z_Construct_UClass_UPlayerStats_NoRegister();
+GAME_API UClass* Z_Construct_UClass_UPlayerUpgrades_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Game();
 // End Cross Module References
 
@@ -39,6 +40,12 @@ struct Z_Construct_UClass_AGameCharacter_Statics
 		{ "ModuleRelativePath", "GameCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerStats_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Player" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "GameCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerUpgrades_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Player" },
 		{ "EditInline", "true" },
@@ -89,6 +96,7 @@ struct Z_Construct_UClass_AGameCharacter_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerStats;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerUpgrades;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
@@ -104,6 +112,7 @@ struct Z_Construct_UClass_AGameCharacter_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter_Statics::NewProp_PlayerStats = { "PlayerStats", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameCharacter, PlayerStats), Z_Construct_UClass_UPlayerStats_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerStats_MetaData), NewProp_PlayerStats_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter_Statics::NewProp_PlayerUpgrades = { "PlayerUpgrades", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameCharacter, PlayerUpgrades), Z_Construct_UClass_UPlayerUpgrades_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerUpgrades_MetaData), NewProp_PlayerUpgrades_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraBoom_MetaData), NewProp_CameraBoom_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameCharacter, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FollowCamera_MetaData), NewProp_FollowCamera_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameCharacter, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
@@ -113,6 +122,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGameCharacter_Statics::NewProp_SprintAction = { "SprintAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AGameCharacter, SprintAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintAction_MetaData), NewProp_SprintAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGameCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameCharacter_Statics::NewProp_PlayerStats,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameCharacter_Statics::NewProp_PlayerUpgrades,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameCharacter_Statics::NewProp_FollowCamera,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameCharacter_Statics::NewProp_DefaultMappingContext,
@@ -162,10 +172,10 @@ AGameCharacter::~AGameCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AGameCharacter, AGameCharacter::StaticClass, TEXT("AGameCharacter"), &Z_Registration_Info_UClass_AGameCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGameCharacter), 1462771862U) },
+		{ Z_Construct_UClass_AGameCharacter, AGameCharacter::StaticClass, TEXT("AGameCharacter"), &Z_Registration_Info_UClass_AGameCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGameCharacter), 1609670084U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_958754191(TEXT("/Script/Game"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_1581111620(TEXT("/Script/Game"),
 	Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

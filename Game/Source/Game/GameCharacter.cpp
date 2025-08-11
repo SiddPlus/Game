@@ -10,6 +10,7 @@
 #include "InputActionValue.h"
 
 #include "PlayerStats.h"
+#include "PlayerUpgrades.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -41,6 +42,7 @@ AGameCharacter::AGameCharacter()
 	FollowCamera->bUsePawnControlRotation = false;
 
 	PlayerStats = CreateDefaultSubobject<UPlayerStats>(TEXT("PlayerStats"));
+	PlayerUpgrades = CreateDefaultSubobject<UPlayerUpgrades>(TEXT("PlayerUpgrades"));
 }
 
 void AGameCharacter::BeginPlay()

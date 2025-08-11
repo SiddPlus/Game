@@ -12,6 +12,7 @@ class UInputAction;
 struct FInputActionValue;
 
 class UPlayerStats;
+class UPlayerUpgrades; 
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
@@ -22,6 +23,8 @@ class AGameCharacter : public ACharacter
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player", meta = (AllowPrivateAccess = "true"))
 	UPlayerStats* PlayerStats;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player", meta = (AllowPrivateAccess = "true"))
+	UPlayerUpgrades* PlayerUpgrades;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
@@ -75,5 +78,6 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 	FORCEINLINE UPlayerStats* GetPlayerStats() const { return PlayerStats; }
+	FORCEINLINE UPlayerUpgrades* GetPlayerUpgrade() const { return PlayerUpgrades; }
 };
 

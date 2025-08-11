@@ -65,7 +65,9 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
             "c:\\users\\2304613\\documents\\github\\game\\game\\source\\game\\public\\playerstats.h",
-            "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\unrealeditor\\inc\\game\\uht\\playerstats.generated.h"
+            "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\unrealeditor\\inc\\game\\uht\\playerstats.generated.h",
+            "c:\\users\\2304613\\documents\\github\\game\\game\\source\\game\\public\\playerupgrades.h",
+            "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\unrealeditor\\inc\\game\\uht\\playerupgrades.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GAME_GameCharacter_generated_h
 
-#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGameCharacter(); \
 	friend struct Z_Construct_UClass_AGameCharacter_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AGameCharacter)
 
 
-#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AGameCharacter(AGameCharacter&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AGameCharacter();
 
 
-#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_18_PROLOG
-#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_21_GENERATED_BODY \
+#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_19_PROLOG
+#define FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_22_INCLASS_NO_PURE_DECLS \
+	FID_Users_2304613_Documents_GitHub_Game_Game_Source_Game_GameCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
