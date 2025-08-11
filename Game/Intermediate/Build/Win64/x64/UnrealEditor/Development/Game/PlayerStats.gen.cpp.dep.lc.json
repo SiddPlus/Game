@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\unrealeditor\\inc\\game\\uht\\playerstats.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\x64\\gameeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\game\\definitions.game.h",
+            "c:\\users\\2304613\\documents\\github\\game\\game\\source\\game\\public\\playerstats.h",
+            "c:\\users\\2304613\\documents\\github\\game\\game\\intermediate\\build\\win64\\unrealeditor\\inc\\game\\uht\\playerstats.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
